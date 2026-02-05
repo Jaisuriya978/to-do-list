@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+.todo-card {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.list-group-item {
+  cursor: grab;
+  touch-action: pan-y;
+  transition: transform 0.2s ease;
+}
+
+.list-group-item:active {
+  cursor: grabbing;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.swipe-left {
+  background-color: #ffe1e1;
+}
+
+.swipe-right {
+  background-color: #e1ffe1;
+}
